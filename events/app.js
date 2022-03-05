@@ -36,3 +36,17 @@ console.log(myArray[2]['mouseOver']())
 
 console.log(myArray[3]()); // accesses the position 3 of the array and calls it
 
+let funcArray = [];
+ 
+funcArray.push(() => {
+   console.log("Function 1");
+});
+ 
+funcArray.push(() => {
+   console.log("Function 2");
+});
+ 
+funcArray.push(() => {
+   console.log("Function 3");
+});
+
