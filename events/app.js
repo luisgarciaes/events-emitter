@@ -31,6 +31,8 @@ myArray.push(function () {
 })
 console.log(myArray); //this prints the arrays contents, no matter the type
 
-console.log(myArray[2].mouseOver()); //accesses the second position of the array and invoke one of its functions
+console.log(myArray[2].mouseOver()); //accesses the position 2 of the array and invoke one of its functions
+console.log(myArray[2]['mouseOver']())
 
- 
+console.log(myArray[3]()); // accesses the position 3 of the array and calls it
+
