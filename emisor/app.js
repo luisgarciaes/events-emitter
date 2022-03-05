@@ -20,4 +20,5 @@ emtr.emit('jump'); //calls the function
 console.log('Hell!'); //prints 'Hell!' to the console
 
 emtr.emit('greet'); //prints both greetings to the console
-console.log(emtr.emit)
+
+console.log(emtr.emit) // anon function
