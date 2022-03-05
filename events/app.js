@@ -21,3 +21,16 @@ myKey = 'mouseOver';
 console.log(obj[myKey]());//prints 'The mouse cursor is above' and 'undefined' right after
 
 
+let myArray = [];
+ 
+myArray.push(4);
+myArray.push('A chain');
+myArray.push(obj);
+myArray.push(function () {
+   console.log("Hello from the other side");
+})
+console.log(myArray); //this prints the arrays contents, no matter the type
+
+console.log(myArray[2].mouseOver()); //accesses the second position of the array and invoke one of its functions
+
+ 
