@@ -50,3 +50,7 @@ funcArray.push(() => {
    console.log("Function 3");
 });
 
+funcArray.forEach((item)=>{ // iterates through every function in the array
+    item();
+});
+
