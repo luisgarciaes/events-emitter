@@ -12,7 +12,12 @@ emtr.on('greet', () => {
 emtr.on('jump', ()=> {
     console.log('someone jumped!');
 });
-console.log(emtr)
-emtr.emit('jump');
+console.log(emtr) //prints the function
+
+emtr.emit('jump'); //calls the function
 
 
+console.log('Hell!'); //prints 'Hell!' to the console
+
+emtr.emit('greet'); //prints both greetings to the console
+console.log(emtr.emit)
